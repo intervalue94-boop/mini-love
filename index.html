@@ -1,0 +1,2137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>김민희 전용 | 남자친구의 애정 서비스</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <style>
+    .gallery-block{
+	padding-bottom: 60px;
+	padding-top: 60px;
+}
+
+.gallery-block .heading{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.gallery-block .heading h2{
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.gallery-block.cards-gallery h6 {
+  font-size: 17px;
+  font-weight: bold; 
+}
+
+.gallery-block.cards-gallery .card{
+  transition: 0.4s ease; 
+}
+
+.gallery-block.cards-gallery .card img {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15); 
+}
+
+.gallery-block.cards-gallery .card-body {
+  text-align: center; 
+}
+
+.gallery-block.cards-gallery .card-body p {
+  font-size: 15px; 
+}
+
+.gallery-block.cards-gallery a {
+  color: #212529; 
+}
+
+.gallery-block.cards-gallery a:hover {
+  text-decoration: none; 
+}
+
+.gallery-block.cards-gallery .card {
+  margin-bottom: 30px; 
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 576px) {
+
+	.gallery-block .transform-on-hover:hover {
+	    transform: translateY(-10px) scale(1.02);
+	    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15) !important; 
+	}
+}
+  </style>
+  <style>
+.ryu-wrap2{
+  position: relative;
+  width: 100%;
+  height: 780px;
+  overflow: hidden;
+}
+
+.ryu-item2{
+  position:absolute;
+  top:0;
+  left:50%;
+  width:80%;
+  transform:translateX(-50%) scale(.9);
+  opacity:.5;
+  transition:.4s cubic-bezier(.22,.61,.36,1);
+  z-index:1;
+  border: 1px solid rgba(137, 94, 55, .18);
+  border-radius: 20px;
+}
+.ryu-item2 img {
+  border-radius: 16px;
+}
+
+.ryu-item2.active{
+  transform:translateX(-50%) scale(1);
+  opacity:1;
+  z-index:3;
+  border: 3px solid #e63a3a;
+  border-radius: 20px;
+}
+
+.ryu-item2.left{
+  transform:translateX(-120%) scale(.9);
+  z-index:2;
+}
+
+.ryu-item2.right{
+  transform:translateX(20%) scale(.9);
+  z-index:2;
+}
+
+.ryu-carousel-card2{
+  background:#fff;
+  border-radius:20px;
+  padding:28px 24px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.12);
+  display:flex;
+  flex-direction:column;
+  height:100%;
+  text-align: center;
+}
+
+.ryu-badge2{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: .2px;
+  color: #111;
+  background: rgba(137, 94, 55, .08);
+  border: 1px solid rgba(137, 94, 55, .14);
+  padding: 6px 16px;
+  border-radius: 999px;
+  margin-bottom: 18px;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ryu-title2{
+  font-size:20px;
+  font-weight:900;
+  margin-bottom:6px;
+  color: #e63a3a;
+}
+
+.ryu-sub2{
+  font-size:13px;
+  color:#666;
+  margin-bottom:14px;
+}
+
+.ryu-price2{
+  font-size:18px;
+  font-weight:800;
+  margin-bottom:18px;
+  color: #e63a3a;
+}
+
+.ryu-line2{
+  height:1px;
+  background:#eee;
+  margin-bottom:30px;
+  margin-top:30px;
+}
+
+.ryu-list2{
+  font-size:13px;
+  line-height:1.7;
+  color:#444;
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+.ryu-list2 li{
+  margin-bottom:6px;
+}
+
+.ryu-foot2{
+  margin-top:auto;
+  font-size:12px;
+  color:#888;
+}
+
+.ryu-btn-position2{
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-40%);
+  z-index: 20;
+}
+
+.ryu-btn2{
+  position:absolute;
+  top: 40%;
+  transform: translateY(-40%);
+  width:55px;
+  height:55px;
+  border:none;
+  border-radius:50%;
+  background:transparent;
+  cursor:pointer;
+  font-size:55px;
+  color:#e63a3a;
+  opacity:.7;
+}
+
+.ryu-prev2{ left:0; }
+.ryu-next2{ right:0; }
+
+.ryu-dots2{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display:flex;
+  justify-content:center;
+  gap:6px;
+}
+
+.ryu-dot2{
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  background:#ccc;
+}
+
+.ryu-dot2.active{
+  background:#e63a3a;
+}
+.ryu-wrap{
+  position: relative;
+  width: 100%;
+  height: 780px;
+  overflow: hidden;
+}
+
+.ryu-item{
+  position:absolute;
+  top:0;
+  left:50%;
+  width:80%;
+  transform:translateX(-50%) scale(.9);
+  opacity:.5;
+  transition:.4s cubic-bezier(.22,.61,.36,1);
+  z-index:1;
+  border: 1px solid rgba(137, 94, 55, .18);
+  border-radius: 20px;
+}
+.ryu-item img {
+  border-radius: 16px;
+}
+
+.ryu-item.active{
+  transform:translateX(-50%) scale(1);
+  opacity:1;
+  z-index:3;
+  border: 3px solid #e63a3a ;
+  border-radius: 20px;
+}
+
+.ryu-item.left{
+  transform:translateX(-120%) scale(.9);
+  z-index:2;
+}
+
+.ryu-item.right{
+  transform:translateX(20%) scale(.9);
+  z-index:2;
+}
+
+
+.ryu-carousel-card{
+  background:#fff;
+  border-radius:20px;
+  padding:28px 24px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.12);
+  display:flex;
+  flex-direction:column;
+  height:100%;
+  text-align: center;
+}
+
+.ryu-badge{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: .2px;
+  color: #111 ;
+  background: rgba(137, 94, 55, .08);
+  border: 1px solid rgba(137, 94, 55, .14);
+  padding: 6px 16px;
+  border-radius: 999px;
+  margin-bottom: 18px;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ryu-title{
+  font-size:20px;
+  font-weight:900;
+  margin-bottom:6px;
+  color: #e63a3a ;
+}
+
+.ryu-sub{
+  font-size:13px;
+  color:#666;
+  margin-bottom:14px;
+}
+
+.ryu-price{
+  font-size:18px;
+  font-weight:800;
+  margin-bottom:18px;
+  color: #e63a3a ;
+
+}
+
+.ryu-line{
+  height:1px;
+  background:#eee;
+  margin-bottom:30px;
+  margin-top:30px;
+}
+
+.ryu-list{
+  font-size:13px;
+  line-height:1.7;
+  color:#444;
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+.ryu-list li{
+  margin-bottom:6px;
+}
+
+.ryu-foot{
+  margin-top:auto;
+  font-size:12px;
+  color:#888;
+}
+
+.ryu-btn-position{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-40%);
+    z-index: 20;
+}
+
+.ryu-btn{
+  position:absolute;
+  top: 40%;
+  transform: translateY(-40%);
+  width:55px;
+  height:55px;
+  border:none;
+  border-radius:50%;
+  background:transparent;
+  cursor:pointer;
+  font-size:55px;
+  color:#e63a3a ;
+  opacity:.7;
+}
+
+.ryu-prev{ left:0; }
+.ryu-next{ right:0; }
+
+.ryu-dots{
+      left: 0;
+    position: absolute;
+    right: 0;
+  display:flex;
+  justify-content:center;
+  gap:6px;
+}
+
+.ryu-dot{
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  background:#ccc;
+}
+
+.ryu-dot.active{
+  background:#e63a3a ;
+}
+
+  </style>
+  <style>
+
+    @font-face {
+        font-family: 'Juache';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+        font-weight: normal;
+        font-display: swap;
+    }
+    :root {
+      --red: #dc2e2e;
+      --red-dark: #b91f1f;
+      --red-soft: #fff1f1;
+      --text: #222222;
+      --text-2: #4d4d4d;
+      --text-3: #7b7b7b;
+      --line: #e9e9ec;
+      --bg: #f7f7f8;
+      --white: #ffffff;
+      --navy: #31374a;
+      --shadow: 0 18px 40px rgba(28, 30, 36, 0.08);
+      --shadow-sm: 0 10px 24px rgba(28, 30, 36, 0.06);
+      --radius-xl: 28px;
+      --radius-lg: 22px;
+      --radius-md: 18px;
+      --radius-sm: 14px;
+      --container: 1240px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Juache", "Apple SD Gothic Neo", "Noto Sans KR", Arial, sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, #fafafa 0%, #f6f6f7 100%);
+      line-height: 1.6;
+      word-break: keep-all;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    button { font: inherit; }
+
+    .wrap {
+      width: min(var(--container), calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 88px 0;
+      position: relative;
+    }
+
+    .section-title-row {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 28px;
+    }
+
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--red);
+      letter-spacing: 0.02em;
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      margin: 0;
+      font-size: clamp(32px, 4vw, 48px);
+      line-height: 1.18;
+      letter-spacing: -0.03em;
+    }
+
+    .section-desc {
+      margin: 14px 0 0;
+      color: var(--text-2);
+      font-size: 18px;
+      line-height: 1.75;
+    }
+
+    .eyebrow-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--red);
+      box-shadow: 0 0 0 6px rgba(220, 46, 46, 0.12);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 58px;
+      padding: 0 28px;
+      border-radius: 16px;
+      border: 0;
+      cursor: pointer;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+      white-space: nowrap;
+    }
+
+    .btn:hover { transform: translateY(-2px); }
+
+    .btn-red {
+      color: #fff;
+      background: linear-gradient(180deg, #e63a3a 0%, #cf2323 100%);
+      box-shadow: 0 14px 30px rgba(220, 46, 46, 0.24);
+    }
+
+    .btn-red:hover { box-shadow: 0 18px 34px rgba(220, 46, 46, 0.3); }
+
+    .btn-line {
+      color: var(--red);
+      background: #fff;
+      border: 1px solid #f2b8b8;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .card {
+      background: rgba(255,255,255,.96);
+      border: 1px solid rgba(233,233,236,.9);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+      backdrop-filter: blur(10px);
+    }
+
+    header.site-header {
+      position: sticky;
+      top: 0;
+      z-index: 70;
+      background: rgba(255,255,255,.84);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(235,235,238,.9);
+    }
+
+    .site-header::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto 0;
+      height: 4px;
+      background: linear-gradient(90deg, #ea4040 0%, #d42222 60%, #f56f6f 100%);
+    }
+
+    .header-inner {
+      height: 86px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      font-weight: 900;
+      font-size: 32px;
+      letter-spacing: -0.04em;
+    }
+
+    .brand svg { width: 52px; height: 52px; }
+    .brand .brand-text { display: flex; align-items: baseline; gap: 2px; }
+    .brand .black { color: #1f1f1f; }
+    .brand .red { color: var(--red); }
+
+    .header-nav {
+      display: flex;
+      align-items: center;
+      gap: 34px;
+      color: var(--text-2);
+      font-weight: 600;
+    }
+
+    .header-nav a {
+      position: relative;
+      padding: 6px 0;
+    }
+
+    .header-nav a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 100%;
+      height: 3px;
+      border-radius: 999px;
+      background: var(--red);
+      transform: scaleX(0);
+      transform-origin: center;
+      transition: transform .2s ease;
+    }
+
+    .header-nav a:hover,
+    .header-nav a.active { color: var(--text); }
+    .header-nav a:hover::after,
+    .header-nav a.active::after { transform: scaleX(1); }
+
+    .header-call {
+      min-height: 52px;
+      padding: 0 22px;
+      border-radius: 14px;
+      background: linear-gradient(180deg, #ea4040 0%, #d42222 100%);
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 500;
+      box-shadow: 0 12px 26px rgba(220, 46, 46, 0.22);
+      white-space: nowrap;
+    }
+
+    .header-call span { font-size: 14px; opacity: .88; }
+    .header-call strong { font-size: 18px; letter-spacing: -0.02em; font-weight: 500;}
+
+    .hero {
+      padding: 52px 0 42px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 1fr;
+      gap: 28px;
+      align-items: stretch;
+    }
+
+    .hero-copy {
+      padding: 60px 54px;
+      min-height: 630px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 10% 20%, rgba(220,46,46,.1), transparent 32%),
+        linear-gradient(180deg, #ffffff 0%, #fbfbfc 100%);
+    }
+
+    .hero-copy::after {
+      content: "";
+      position: absolute;
+      right: -80px;
+      bottom: -80px;
+      width: 280px;
+      height: 280px;
+      border-radius: 999px;
+      background: radial-gradient(circle, rgba(220,46,46,.08), transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      width: fit-content;
+      padding: 12px 18px;
+      border-radius: 999px;
+      background: var(--red-soft);
+      color: var(--red);
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 26px;
+    }
+
+    .hero-title {
+      margin: 0;
+      font-size: clamp(44px, 5vw, 76px);
+      line-height: 1;
+      letter-spacing: -0.05em;
+    }
+
+    .hero-title .accent { color: var(--red); }
+
+    .hero-desc {
+      margin: 22px 0 0;
+      font-size: 21px;
+      color: var(--text-2);
+      line-height: 1.6;
+      max-width: 640px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 34px;
+    }
+
+    .hero-sub {
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      color: var(--text-3);
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .hero-sub span {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 300;
+    }
+
+    .hero-sub i {
+      width: 9px;
+      height: 9px;
+      border-radius: 999px;
+      background: var(--red);
+      display: inline-block;
+    }
+
+    .hero-visual {
+      min-height: 630px;
+      overflow: hidden;
+      position: relative;
+      background: linear-gradient(180deg, rgba(255,255,255,.18), rgba(255,255,255,.08)),
+                  url('https://postfiles.pstatic.net/MjAyNjA0MTRfOTUg/MDAxNzc2MDkzMzM1NjEw.I2TVbJJuaBCS449RE27Xt8IvbaJH16Ad07JV1ffDiqkg.c6VPkkWXVI3VsQ-ibv2YxVwmW2CbRViksZLRgaWb_PAg.JPEG/1.jpg?type=w773') center/cover no-repeat;
+    }
+
+    .hero-visual::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(255,255,255,.42) 0%, rgba(255,255,255,.08) 38%, rgba(255,255,255,0) 60%);
+    }
+
+    .hero-badge {
+      position: absolute;
+      bottom: 34px;
+      right: 34px;
+      padding: 16px 18px;
+      border-radius: 18px;
+      background: rgba(255,255,255,.9);
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(255,255,255,.55);
+      backdrop-filter: blur(10px);
+    }
+
+    .hero-badge small { display: block; color: var(--text-3); font-weight: 700; margin-bottom: 4px; }
+    .hero-badge strong { display: block; font-size: 22px; letter-spacing: -0.03em; font-weight: 500;}
+
+    .feature-strip {
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .feature-card {
+      padding: 0px;
+      position: relative;
+      overflow: hidden;
+      min-height: 180px;
+    }
+
+    .feature-card::before {
+      content: "";
+      position: absolute;
+      inset: auto -40px -40px auto;
+      width: 120px;
+      height: 120px;
+      border-radius: 999px;
+      background: radial-gradient(circle, rgba(220,46,46,.08), transparent 70%);
+    }
+    .feature-card img {
+      border-radius: 16px;
+    }
+    .feature-icon {
+      width: 62px;
+      height: 62px;
+      border-radius: 18px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--red-soft);
+      margin-bottom: 18px;
+    }
+
+    .feature-icon svg { width: 34px; height: 34px; }
+    .feature-title {
+      padding: 28px 24px 0 24px;
+      margin: 0;
+      font-size: 24px;
+      letter-spacing: -0.03em;
+    }
+    .feature-desc {
+      margin: 10px 0 0;
+      padding: 0px 24px 24px 24px;
+      color: var(--text-2);
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .success-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .success-card {
+      overflow: hidden;
+      position: relative;
+    }
+
+    .success-photo {
+      height: 330px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .camp:nth-child(1) .success-photo1 {
+      background-image: url('https://postfiles.pstatic.net/MjAyNjA0MTRfMTUz/MDAxNzc2MDk5NjM0MTk2.EmUjrzmbGq0M0LuagY-_Bk4qO7mJJnYWVkbEQr4syUcg.zQdsfgs0IPH6aQB5rtZ7VWC38jYD2pwvBPO7iL271wgg.PNG/Untitled-3.png?type=w773');
+    }
+    .camp:nth-child(2) .success-photo1 {
+      background-image: url('https://postfiles.pstatic.net/MjAyNjA0MTRfNDUg/MDAxNzc2MDk5NjM0MTk0.g_vRA2LSBOlamb2uAoVBw03RtlRtWMkYlbT-5NNTCXog.h_RVv_pGZae7SjdIeDs3zlRT5MnsOTXrmm_ocunEwD8g.PNG/2222.png?type=w773');
+    }
+    .home:nth-child(1) .success-photo2 {
+      background-image: url('https://postfiles.pstatic.net/MjAyNjA0MTRfNDIg/MDAxNzc2MTAwOTY0OTY3.lim6rnTUg7TIS6Xgd6qHxOerBV1vK-ai-nndEv_1m2Ug.CGPRAt9xZ09Amk2qDV8rWyH_t-VYao4K-MDanPPwGIUg.PNG/333.png?type=w773');
+    }
+    .home:nth-child(2) .success-photo2 {
+      background-image: url('https://postfiles.pstatic.net/MjAyNjA0MTRfMTAg/MDAxNzc2MTAwMjE4NzAx.8G5aBtMp3k7T_6u-a9Cgb-ROz43L_-VnTe3WwS9nErMg.ykrE0CgMET7FD4bDGzq8qannTPHPcyiBcPsDAV1zwcEg.PNG/444.png?type=w773');
+    }
+
+    .success-body {
+      padding: 28px 26px 26px;
+      background: linear-gradient(180deg, #ffffff 0%, #fcfcfd 100%);
+    }
+
+    .quote-mark {
+      font-size: 44px;
+      line-height: 1;
+      color: rgba(220,46,46,.35);
+      font-weight: 900;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .success-quote {
+      font-size: 22px;
+      line-height: 1.7;
+      margin: 0 0 14px;
+      letter-spacing: -0.02em;
+      font-weight: 700;
+    }
+
+    .success-meta {
+      color: var(--text-2);
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .center-btn {
+      display: flex;
+      justify-content: center;
+      margin-top: 28px;
+    }
+
+    .process-wrap {
+      padding: 38px;
+      background: linear-gradient(180deg, #fff 0%, #fdf8f8 100%);
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      position: relative;
+      margin-top: 22px;
+    }
+
+    .process-grid::before {
+      content: "";
+      position: absolute;
+      top: 54px;
+      left: 10%;
+      right: 10%;
+      height: 4px;
+      background: linear-gradient(90deg, #f2c7c7 0%, #f1d8d8 100%);
+      z-index: 0;
+    }
+
+    .process-item {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 0 8px;
+    }
+
+    .process-circle {
+      width: 110px;
+      height: 110px;
+      border-radius: 999px;
+      margin: 0 auto 16px;
+      background: linear-gradient(180deg, #fff 0%, #fff5f5 100%);
+      border: 1px solid #f3d6d6;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .process-circle svg { width: 46px; height: 46px; }
+
+    .process-num {
+      position: absolute;
+      top: -6px;
+      left: 50%;
+      transform: translateX(-50%);
+      min-width: 42px;
+      height: 42px;
+      border-radius: 999px;
+      background: var(--red);
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 18px;
+      box-shadow: 0 10px 20px rgba(220,46,46,.24);
+    }
+
+    .process-title {
+      margin: 0;
+      font-size: 23px;
+      letter-spacing: -0.03em;
+    }
+
+    .process-desc {
+      margin: 8px 0 0;
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--text-2);
+    }
+
+    .register-wrap {
+      padding: 38px;
+    }
+
+    .register-top {
+      margin-bottom: 22px;
+    }
+
+    .register-lead {
+      margin: 0;
+      font-size: 20px;
+      color: var(--text-2);
+      line-height: 1.8;
+    }
+
+    .register-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-top: 26px;
+    }
+
+    .register-card {
+      padding: 30px 28px;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, #ffffff 0%, #fcfcfd 100%);
+      box-shadow: var(--shadow-sm);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .register-card.male::before,
+    .register-card.female::before {
+      content: "";
+      position: absolute;
+      top: -30px;
+      right: -30px;
+      width: 110px;
+      height: 110px;
+      border-radius: 999px;
+      opacity: .35;
+    }
+
+    .register-card.male::before { background: radial-gradient(circle, rgba(112,149,214,.38), transparent 68%); }
+    .register-card.female::before { background: radial-gradient(circle, rgba(241,172,194,.38), transparent 68%); }
+
+    .register-kind {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--text-2);
+    }
+
+    .register-kind .mini-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--red-soft);
+    }
+
+    .register-price {
+      margin: 18px 0 4px;
+      font-size: 52px;
+      line-height: 1;
+      font-weight: 900;
+      letter-spacing: -0.05em;
+      color: var(--red);
+    }
+
+    .register-price span {
+      font-size: 28px;
+      color: var(--text);
+      margin-left: 4px;
+      vertical-align: 8px;
+    }
+
+    .register-list {
+      margin: 22px 0 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 12px;
+    }
+
+    .register-list li {
+      display: flex;
+      align-items: start;
+      gap: 10px;
+      color: var(--text-2);
+      font-size: 17px;
+      line-height: 1.6;
+      font-weight: 600;
+    }
+
+    .check {
+      width: 22px;
+      height: 22px;
+      border-radius: 999px;
+      background: var(--red-soft);
+      color: var(--red);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 22px;
+      font-size: 14px;
+      margin-top: 2px;
+      font-weight: 900;
+    }
+
+    .register-note {
+      margin-top: 24px;
+      padding: 24px;
+      border-radius: 18px;
+      background: #fafafa;
+      border: 1px dashed #e2d4d4;
+      display: grid;
+      gap: 12px;
+    }
+
+    .register-note .note-item {
+      display: flex;
+      gap: 10px;
+      color: var(--text-2);
+      font-size: 17px;
+      line-height: 1.7;
+      font-weight: 600;
+    }
+
+    .why-wrap {
+      background: linear-gradient(180deg, #fbfbfc 0%, #ffffff 100%);
+      padding: 44px;
+    }
+
+    .why-center {
+      max-width: 980px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .why-list {
+      margin: 24px 0 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 18px;
+    }
+
+    .why-list li {
+      font-size: 28px;
+      line-height: 1.5;
+      letter-spacing: -0.03em;
+      font-weight: 800;
+      color: var(--text-2);
+    }
+
+    .why-list .accent { color: var(--red); }
+    .card-img-top {
+      border-radius: 16px 16px 0 0;
+      height: 300px;
+      object-fit: cover;
+    }
+    .cta-banner {
+      position: relative;
+      overflow: hidden;
+      padding: 54px;
+      border-radius: 28px;
+      color: #fff;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,.08) 0%, rgba(255,255,255,0) 34%),
+        linear-gradient(135deg, #ed4b4b 0%, #da2b2b 52%, #bd1717 100%);
+      box-shadow: 0 22px 46px rgba(220, 46, 46, 0.24);
+    }
+
+    .cta-banner::before,
+    .cta-banner::after {
+      content: "";
+      position: absolute;
+      border-radius: 999px;
+      background: rgba(255,255,255,.1);
+    }
+    .cta-banner::before { width: 260px; height: 260px; top: -80px; right: -60px; }
+    .cta-banner::after { width: 180px; height: 180px; left: -40px; bottom: -60px; }
+
+    .cta-content {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .cta-title {
+      margin: 0;
+      font-size: clamp(34px, 4vw, 56px);
+      line-height: 1.18;
+      letter-spacing: -0.04em;
+    }
+
+    .cta-desc {
+      margin: 16px 0 0;
+      font-size: 20px;
+      line-height: 1.8;
+      opacity: .92;
+    }
+
+    .cta-actions {
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+
+    .btn-white {
+      background: #fff;
+      color: var(--red);
+      box-shadow: 0 14px 30px rgba(0,0,0,.12);
+    }
+
+    .btn-ghost-white {
+      background: transparent;
+      color: #fff;
+      border: 1px solid rgba(255,255,255,.5);
+    }
+
+    .site-footer {
+      margin-top: 84px;
+      background: linear-gradient(180deg, #384156 0%, #2d3344 100%);
+      color: rgba(255,255,255,.9);
+      padding: 38px 0 30px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 22px;
+      align-items: center;
+    }
+
+    .footer-brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 28px;
+      font-weight: 900;
+      letter-spacing: -0.04em;
+    }
+
+    .footer-brand svg { width: 48px; height: 48px; }
+
+    .footer-links {
+      display: flex;
+      justify-content: end;
+      gap: 24px;
+      flex-wrap: wrap;
+      font-weight: 700;
+      color: rgba(255,255,255,.9);
+    }
+
+    .footer-bottom {
+      margin-top: 20px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255,255,255,.12);
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      color: rgba(255,255,255,.68);
+      font-size: 15px;
+    }
+
+    @media (max-width: 1180px) {
+      .header-nav { display: none; }
+      .hero-grid,
+      .footer-grid,
+      .cta-content { grid-template-columns: 1fr; display: grid; }
+      .hero-visual,
+      .hero-copy { min-height: 520px; }
+      .feature-strip,
+      .success-grid,
+      .register-grid,
+      .process-grid { grid-template-columns: 1fr 1fr; }
+      .process-grid::before { display: none; }
+      .cta-content { gap: 28px; }
+      .footer-links { justify-content: start; }
+      .ryu-wrap, .ryu-wrap2 {height: 620px;}
+    }
+
+    @media (max-width: 780px) {
+      .section { padding: 64px 0; }
+      .hero { padding: 36px 0 24px; }
+      .hero-copy { padding: 36px 28px; min-height: auto; }
+      .hero-visual { min-height: 340px; }
+      .feature-strip,
+      .success-grid,
+      .register-grid,
+      .process-grid { grid-template-columns: 1fr; }
+      .success-photo { height: 260px; }
+      .wrap { width: min(var(--container), calc(100% - 24px)); }
+      .brand { font-size: 26px; }
+      .brand svg { width: 44px; height: 44px; }
+      .header-call { min-height: 48px; padding: 0 16px; }
+      .header-call span { display: none; }
+      .header-call strong { font-size: 15px; }
+      .section-title { font-size: 34px; }
+      .section-desc,
+      .hero-desc { font-size: 17px; }
+      .process-wrap,
+      .register-wrap,
+      .why-wrap,
+      .cta-banner { padding: 26px; }
+      .why-list li { font-size: 21px; }
+      .btn { width: 100%; }
+      .hero-actions { flex-direction: column; align-items: stretch; }
+      .hero-sub { flex-direction: column; gap: 10px; }
+      .footer-bottom { font-size: 13px; }
+      .ryu-wrap, .ryu-wrap2 {height: 420px;}
+    }
+  </style>
+
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="#top" class="brand" aria-label="메인페이지 이동">
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M12 28C12 20.268 18.268 14 26 14C30.377 14 34.284 16.009 36.855 19.156L39.001 21.783L41.147 19.156C43.718 16.009 47.625 14 52.002 14C59.734 14 66.002 20.268 66.002 28C66.002 31.948 64.354 35.717 61.448 38.385L39 58L16.554 38.385C13.648 35.717 12 31.948 12 28Z" transform="translate(-7 -4)" stroke="#dc2e2e" stroke-width="5" stroke-linejoin="round"/>
+          <path d="M17 30H25L28.5 23L34 38L38 30H47" stroke="#dc2e2e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand-text"><span class="black">민희야,</span><span class="red"> 사랑해</span></span>
+      </a>
+
+      <nav class="header-nav" aria-label="주요 서비스">
+        <a href="#service-info">서방님의 서비스</a>
+        <a href="#success-story">애정 표현</a>
+        <a href="#register-guide">데이트 장소</a>
+        <a href="#contact">데이트 신청</a>
+      </nav>
+
+      <a href="#contact" class="header-call">
+        <span>서방님 호출 문의</span>
+        <strong>010-5064-6399</strong>
+      </a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy card">
+          <div class="hero-kicker"><span class="eyebrow-dot"></span> 미니만 생각하는 서방님</div>
+          <h1 class="hero-title">민희야,<span class="accent">사랑해</span><BR>너만을 위해 만든 홈페이지야</h1>
+          <p class="hero-desc">미니만을 생각하고 만든 사이트입니다. 다른 외부인은 출입할 수 없고, 볼 수도 없으며, 존재는지조차 알 수 없습니다. 오로지 단 한명, 우리 <span style="color: red;">애기공주</span>밖에 볼 수 없는 사이트입니다.</p>
+          <div class="hero-actions">
+            <a href="#register-guide" class="btn btn-red">서방님께 애교부리기</a>
+            <a href="#contact" class="btn btn-line">서방님께 뽀뽀 신청하기</a>
+          </div>
+          <div class="hero-sub">
+            <span><i></i>서방님께</span>
+            <span><i></i>이쁨받고 싶다면 ?</span>
+            <span><i></i>애교만 부려준다면 ?</span>
+            <span><i></i>그냥 자지러집니다.</span>
+          </div>
+        </div>
+
+        <div class="hero-visual card" aria-label="동네사이 메인 이미지">
+          <div class="hero-badge">
+            <small>우리만의 러브 스토리</small>
+            <strong>그림을 핑계로 이어진 우리</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="service-info">
+      <div class="wrap">
+        <div class="section-title-row">
+          <div>
+            <div class="section-label"><span class="eyebrow-dot"></span> 우리의 지난 데이트</div>
+            <h2 class="section-title">새로운 걸 많이 도전해보고픈,<br>애기공주 ㅋㅋㅋㅋㅋ</h2>
+          </div>
+        </div>
+
+        <div class="feature-strip">
+          <article class="feature-card card">
+            <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfMTA3/MDAxNzc2MDk2Mjg0MzM5.hZcUiuwEHb1ag_k8OPkfy2CIxogV9s4h11gi74fOsw8g.ZwYexZhCkNWU5gy5CkKETMih22c51vykeXiEjpvOoDAg.PNG/Untitled-2_0003_IMG_3318.png?type=w773" alt="">
+            <h3 class="feature-title">운전연수</h3>
+            <p class="feature-desc">면허는 있는데… 운전은 아직 낯선 사이입니다. 근데 생각보다 나름 잘했던 운전연수 출발은 자신감, 끝은 식은땀… 그래도 살아 돌아왔다 </p>
+          </article>
+
+          <article class="feature-card card">
+            <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfMjY1/MDAxNzc2MDk2Mjg0MzQz.Lc3bDCQp3WDG5eBdxxXeV_mRWk2w0XePRvctLzjy7yYg.un7T6uW4Z1zsBhs0HgO8ewVsrh3rdltQSOoRo2LRtRgg.PNG/Untitled-2_0000_IMG_2679.png?type=w773" alt="">
+            <h3 class="feature-title">쇠질운동</h3>
+            <p class="feature-desc">힘이 생각보다 쎄다??? 왜지?? 이작은 체구에서 어디가 힘이 있는거지? 작다고 얕보면 큰일납니다 보기보다 힘 쎄요</p>
+          </article>
+
+          <article class="feature-card card">
+            <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfMTAz/MDAxNzc2MDk2Mjg0MzQw.ETIXwcsF5vf5CuJRLWrDeMIc6HEogdv1M6OVipfHuagg.M_f_EaHUYcCr1vcGgGYHacjVo9H271I4fe7Y24vptq4g.PNG/Untitled-2_0002_Screenshot-2026-04-14-at-00.50.29.png?type=w773" alt="">
+            <h3 class="feature-title">클라이밍</h3>
+            <p class="feature-desc">얌전하고 조용한 줄만 알았는데, 벽 앞에 서면 눈빛부터 달라진다 가볍게 시작한 것 같은데 어느 순간 다치겠는데?</p>
+          </article>
+
+          <article class="feature-card card">
+            <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfNSAg/MDAxNzc2MDk2Mjg0MzQ1.Xolms3UW6c6NTzTtOi-YRgOcQpqiW5EXGqk9lQeY1FYg.bJ-WMW4rCZt6aZr_dho169hi4_uzbGsTqSmzHj0ojUYg.PNG/Untitled-2_0001_IMG_3448.png?type=w773" alt="">
+            <h3 class="feature-title">결국다침</h3>
+            <p class="feature-desc">버티면 될 줄 알았는데, 결국 몸이 먼저 항복해버렸다 괜찮다 해놓고 다음날 움직일 때마다 후회했을 것이다.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="success-story">
+      <div class="wrap">
+        <div class="section-title-row">
+          <div>
+            <div class="section-label"><span class="eyebrow-dot"></span> 노을맛집 낙동강 뷰</div>
+            <h2 class="section-title">노지캠핑 & 캠프파이어</h2>
+            <p class="section-desc">당시엔 은근히 추웠고 불피우니까 조금은 나았지만, 꽤나 추억이 된 캠핑데이트</p>
+          </div>
+        </div>
+
+        <div class="success-grid">
+          <article class="success-card card camp">
+            <div class="success-photo success-photo1 " aria-hidden="true"></div>
+            <div class="success-body">
+              <span class="quote-mark">“</span>
+              <p class="success-quote">우리 지역에서 이렇게 좋은 분을 만날 줄 몰랐어요. 부담 없이 시작해서 더 편했습니다.</p>
+              <div class="success-meta">부산 38세 남성 &amp; 36세 여성</div>
+            </div>
+          </article>
+
+          <article class="success-card card camp">
+            <div class="success-photo success-photo1 " aria-hidden="true"></div>
+            <div class="success-body">
+              <span class="quote-mark">“</span>
+              <p class="success-quote">처음부터 합리적으로 조율돼서 좋았습니다. 급하지 않게 진행된 점이 특히 마음에 들었어요.</p>
+              <div class="success-meta">전주 42세 여성 &amp; 40세 남성</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="success-story">
+      <div class="wrap">
+        <div class="section-title-row">
+          <div>
+            <div class="section-label"><span class="eyebrow-dot"></span> 미니가 그토록 원했던</div>
+            <h2 class="section-title">홈 파티</h2>
+            <p class="section-desc">생에 살 일이 없던 식탁보 아기자기한 소품들 다이소에서 급구해서 꽤나 그럴듯하게 꾸몄던 추억</p>
+          </div>
+        </div>
+
+        <div class="success-grid">
+          <article class="success-card card home">
+            <div class="success-photo success-photo2" aria-hidden="true"></div>
+            <div class="success-body">
+              <span class="quote-mark">“</span>
+              <p class="success-quote">우리 지역에서 이렇게 좋은 분을 만날 줄 몰랐어요. 부담 없이 시작해서 더 편했습니다.</p>
+              <div class="success-meta">부산 38세 남성 &amp; 36세 여성</div>
+            </div>
+          </article>
+
+          <article class="success-card card home">
+            <div class="success-photo success-photo2" aria-hidden="true"></div>
+            <div class="success-body">
+              <span class="quote-mark">“</span>
+              <p class="success-quote">처음부터 합리적으로 조율돼서 좋았습니다. 급하지 않게 진행된 점이 특히 마음에 들었어요.</p>
+              <div class="success-meta">전주 42세 여성 &amp; 40세 남성</div>
+            </div>
+          </article>
+        </div>
+
+        <div class="center-btn">
+          <a href="#contact" class="btn btn-red">다른 데이트 더 보고싶다면 ?</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="process">
+      <div class="wrap">
+        <div class="process-wrap card">
+                    <div>
+            <div class="section-label"><span class="eyebrow-dot"></span> 우리 서로의 첫 생일파티</div>
+            <h2 class="section-title">어색하고 우당탕탕 생일을 준비해준 공주</h2>
+            <p class="section-desc mb-5">서프라이즈도 실패하고 결국 생일 당사자와 같이 꾸민 생일파티 ㅋㅋㅋㅋㅋㅋㅋㅋ</p>
+          </div>
+          <div class="section-title-row">
+            <div class="ryu-wrap" id="ryuWrap">
+              <div class="ryu-btn-position">
+                <button class="ryu-btn ryu-prev">‹</button>
+                <button class="ryu-btn ryu-next">›</button>
+              </div>
+                <!-- 카드 1 -->
+                <div class="ryu-item">
+                  <div class="ryu-carousel-card">
+                    <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfMjcw/MDAxNzc2MDk4NTE0MDgz.9kr6yFV8pSxwoR85XoQyyvPuc2YAVW_NKjMXts6OvMgg.Q99mmUBR_yS5vt_qfo_2ExEYELTz5-cDvRjPBpBd6PQg.PNG/Untitled-3_0002_IMG_3920.png?type=w773" alt="">
+                    <div class="ryu-line"></div>
+                    <ul class="ryu-list">
+                      <li>망한 서프라이즈 ㅋㅋㅋㅋㅋㅋㅋㅋ</li>
+                      <li>결국 나랑 같이 불어서 만든 풍선</li>
+                      <li>곰돌이풍선 찢어진건 비밀..🤫</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- 카드 2 -->
+                <div class="ryu-item active">
+                  <div class="ryu-carousel-card">
+                    <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfNiAg/MDAxNzc2MDk4NTE0MDgz.dpLS-Ft-7D6FVxsh5nO5aZj4fx3NAWJjQyfsZv6jl2Yg.ztb5gM_At0SjEcN7FMXzQuY5VxRFvGarIawzufHFn0sg.PNG/Untitled-3_0001_IMG_2737.png?type=w773" alt="">
+
+                    <div class="ryu-line"></div>
+
+                    <ul class="ryu-list">
+                      <li>애기가 직접 주문제작 해온 고양이 초코케익</li>
+                      <li>머루와 함께하는 생일축하</li>
+                      <li>HAPPY SH DAY~❤️</li>
+                    </ul>
+
+                  </div>
+                </div>
+
+                <!-- 카드 3 -->
+                <div class="ryu-item">
+                  <div class="ryu-carousel-card">
+                  <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfNzQg/MDAxNzc2MDk4NTE0MDc0.xkXPN7rP4nZ6KVY5TKRFlgowdWfdFYuyhmVqajGUvT4g.2M2yOFKU7RwsI-llXSaOYhOBZ0NBUqn-pYOEtJ9mgFgg.PNG/Untitled-3_0000_IMG_2741.png?type=w773" alt="">
+
+                    <div class="ryu-line"></div>
+
+                    <ul class="ryu-list">
+                      <li>중학교 이후로 써본적 없는 꼬깔콘</li>
+                      <li>어색한 표정, 어색한 미소</li>
+                      <li>가장 행복한 하루</li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+            <!-- 인디케이터 -->
+            <div class="ryu-dots" id="ryuDots">
+              <div class="ryu-dot"></div>
+              <div class="ryu-dot active"></div>
+              <div class="ryu-dot"></div>
+            </div>
+
+<script>
+(() => {
+
+  const items = document.querySelectorAll('.ryu-item');
+  const dots = document.querySelectorAll('.ryu-dot');
+  const wrap = document.getElementById('ryuWrap');
+
+  let index = 1;
+
+  function update(){
+    items.forEach(i => i.classList.remove('active','left','right'));
+
+    items[index].classList.add('active');
+
+    const prev = (index - 1 + items.length) % items.length;
+    const next = (index + 1) % items.length;
+
+    items[prev].classList.add('left');
+    items[next].classList.add('right');
+
+    dots.forEach(d => d.classList.remove('active'));
+    dots[index].classList.add('active');
+  }
+
+  document.querySelector('.ryu-next').onclick = () => {
+    index = (index + 1) % items.length;
+    update();
+  };
+
+  document.querySelector('.ryu-prev').onclick = () => {
+    index = (index - 1 + items.length) % items.length;
+    update();
+  };
+
+  dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => {
+      index = i;
+      update();
+    });
+  });
+
+  /* 드래그 */
+  let startX = 0;
+  let diff = 0;
+
+  wrap.addEventListener('touchstart', e => {
+    startX = e.touches[0].clientX;
+  });
+
+  wrap.addEventListener('touchmove', e => {
+    diff = e.touches[0].clientX - startX;
+  });
+
+  wrap.addEventListener('touchend', () => {
+    if(diff < -50) index = (index + 1) % items.length;
+    if(diff > 50) index = (index - 1 + items.length) % items.length;
+    update();
+    diff = 0;
+  });
+
+  update();
+
+})();
+</script>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section class="section" id="process2">
+  <div class="wrap">
+    <div class="process-wrap card">
+      <div>
+        <div class="section-label"><span class="eyebrow-dot"></span> 우리 서로의 첫 생일파티</div>
+        <h2 class="section-title">웨이팅이란걸 해본적 없는 사람이 웨이팅 한 이유</h2>
+        <p class="section-desc mb-5">그놈의 두쫀쿠..를 위해 오픈런 뛰어서 결국 그 사람많은 줄을 뚫고서 기어이 사왔다</p>
+      </div>
+
+      <div class="section-title-row">
+        <div class="ryu-wrap2" id="ryuWrap2">
+
+          <div class="ryu-btn-position">
+            <button class="ryu-btn2 ryu-prev2">‹</button>
+            <button class="ryu-btn2 ryu-next2">›</button>
+          </div>
+
+          <!-- 카드 1 -->
+          <div class="ryu-item2">
+            <div class="ryu-carousel-card">
+              <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfOTgg/MDAxNzc2MDk4NTE0MDc2.114Ha8wQ6NR_LM8fwxLYWJuqG5BqRWsuZtrpxuri-rEg.aYB7vw6p-Lp8lHxybqqEk6VGNCbkLJm1kO35t5nlRyog.PNG/Untitled-3_0000_IMG_4549.png?type=w773" alt="">
+              <div class="ryu-line"></div>
+              <ul class="ryu-list">
+                <li>26년 새해는 제대로 못봤지만</li>
+                <li>꽃다발 안고 웃는 공주</li>
+                <li>그 모습이 새해 일출보다 더 이쁘다</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 카드 2 -->
+          <div class="ryu-item2 active">
+            <div class="ryu-carousel-card">
+              <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfMTEg/MDAxNzc2MTAwOTcxMDgz.1IaUB8MJdvSM0aiz7iTyswl2ZKBNp0eEyktMhEoQDDsg.dApU3EgRskmBhZje_ivD2e0hgcdjQuL_95LMlA1jsccg.PNG/Untitled-3_0002_IMG_4117.png?type=w773" alt="">
+              <div class="ryu-line"></div>
+              <ul class="ryu-list">
+                <li>귀여운 공주 시그니쳐 검은고양이</li>
+                <li>나도 주문제작 !</li>
+                <li>주인공 두쫀쿠 두두등장</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 카드 3 -->
+          <div class="ryu-item2">
+            <div class="ryu-carousel-card">
+              <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfMTcy/MDAxNzc2MDk4NTE0MDgx.mW2-ZErXk8gIdgPRzGtFltir6x11ev_Xo2SU01jrBjog.rUlV2D75t7DIvIijZBOrRuVtBcU-jwOE-AJNbPgXHG0g.PNG/Untitled-3_0001_IMG_4625.png?type=w773" alt="">
+              <div class="ryu-line"></div>
+              <ul class="ryu-list">
+                <li>애기 시그니쳐 검은고양이 확대샷</li>
+                <li>미니랑 똑같이 생겼다</li>
+                <li>검은고양이 미니</li>
+              </ul>
+            </div>
+          </div>
+        <!-- dots -->
+        <div class="ryu-dots2" id="ryuDots2">
+          <div class="ryu-dot2"></div>
+          <div class="ryu-dot2 active"></div>
+          <div class="ryu-dot2"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+(() => {
+
+  const items = document.querySelectorAll('.ryu-item2');
+  const dots = document.querySelectorAll('.ryu-dot2');
+  const wrap = document.getElementById('ryuWrap2');
+
+  let index = 1;
+
+  function update(){
+    items.forEach(i => i.classList.remove('active','left','right'));
+
+    items[index].classList.add('active');
+
+    const prev = (index - 1 + items.length) % items.length;
+    const next = (index + 1) % items.length;
+
+    items[prev].classList.add('left');
+    items[next].classList.add('right');
+
+    dots.forEach(d => d.classList.remove('active'));
+    dots[index].classList.add('active');
+  }
+
+  document.querySelector('.ryu-next2').onclick = () => {
+    index = (index + 1) % items.length;
+    update();
+  };
+
+  document.querySelector('.ryu-prev2').onclick = () => {
+    index = (index - 1 + items.length) % items.length;
+    update();
+  };
+
+  dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => {
+      index = i;
+      update();
+    });
+  });
+
+  let startX = 0;
+  let diff = 0;
+
+  wrap.addEventListener('touchstart', e => {
+    startX = e.touches[0].clientX;
+  });
+
+  wrap.addEventListener('touchmove', e => {
+    diff = e.touches[0].clientX - startX;
+  });
+
+  wrap.addEventListener('touchend', () => {
+    if(diff < -50) index = (index + 1) % items.length;
+    if(diff > 50) index = (index - 1 + items.length) % items.length;
+    update();
+    diff = 0;
+  });
+
+  update();
+
+})();
+</script>
+
+
+
+    <section class="section" id="process2">
+  <div class="wrap">
+    <div class="process-wrap card">
+      <div>
+        <div class="section-label"><span class="eyebrow-dot"></span> 그 외 나머지 데이트 모음집</div>
+        <h2 class="section-title">지금까지 있었던 모든 데이트 사진 모음집</h2>
+        <p class="section-desc mb-5">앞으로도 있을 모든 데이트 사진 모아서 업데이트 예정</p>
+      </div>
+
+      <div class="section-title-row">
+        <div class="wrap" id="ryuWrap2">
+          <section class="gallery-block cards-gallery">
+        <div class="container">
+            <div class="heading">
+              <h2>사진 잘 안찍던 시절부터 ING~</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 transform-on-hover">
+                        <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfMTA3/MDAxNzc2MTA0ODI4MDQx.1czhvtlpAPqsgJJK9f9Rg3SakuuYBOmwEJYdxLqBYy8g.y5WvNtwBttOGp8fDkgBliYVoD7qBFwyTXZIbS1T3gPIg.JPEG/IMG_3511.jpg?type=w773" alt="Card Image" class="card-img-top">
+                      </a>
+                        <div class="card-body">
+                            <h6><a href="#">오륙도 가는길</a></h6>
+                            <p class="text-muted card-text">차에서 이상해씨 안고 잠들어버린 체력-0 공주</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 transform-on-hover">
+                        <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfMjI1/MDAxNzc2MTA0ODI5NjM0.Rkwc_uAZxp38RKxx9010WvPoE-cJNANryU-01dtu-90g.-zmaaiYj5UbxsnrqbZpIWfgkVmen7PtKUBY1bAzZKucg.JPEG/IMG_3691.jpg?type=w773" alt="Card Image" class="card-img-top">
+                      </a>
+                        <div class="card-body">
+                            <h6><a href="#">알바가는 길</a></h6>
+                            <p class="text-muted card-text">내가 출근사진 보내니까 미니도 따라 보내던 웃긴 시작 ㅋㅋㅋㅋ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 transform-on-hover">
+                        <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfMjI0/MDAxNzc2MTA0ODI5ODYz.kY4f61Zdk4AYsNUwKLvCs660C0fzmgylolYZiip7kcgg.v3g4WtSfybbDqwciBBbE1BlpaV0wTlPvJh52icBqi_Ug.JPEG/IMG_3692.jpg?type=w773" alt="Card Image" class="card-img-top">
+                      </a>
+                        <div class="card-body">
+                            <h6><a href="#">알바가는 길2</a></h6>
+                            <p class="text-muted card-text">ㅋㅋㅋㅋㅋㅋㅋ귀엽 어색하고 저 오묘한 미소</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 transform-on-hover">
+                        <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfMTQ4/MDAxNzc2MTA0ODI4MDMz.Ehy_NEOU52rYRg6pa0WC1RBFMBPUcfDCjnnoQJMhdOog.Jzcwv4CqNB_2EK2xWrgCf2WDgk_qxFkPXoH0kSuUtckg.JPEG/IMG_4111.jpg?type=w773" alt="Card Image" class="card-img-top">
+                      </a>
+                        <div class="card-body">
+                            <h6><a href="#">공주는 매직중~</a></h6>
+                            <p class="text-muted card-text">결혼식 이쁘게 하겠다고 머리 매직했으나 차이는 없었다 원래 이뻐서?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 transform-on-hover">
+                        <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfMjYx/MDAxNzc2MTA0ODI4NjU0.hhkd4zdinGz0SpTYWl5q73dL0_EBMn03C-TKad0vAaog.oRFlBCnuRX2l-krQvKFY0IqJuq3TDdbhVTk7_Ey3QJwg.JPEG/IMG_3288.jpg?type=w773" alt="Card Image" class="card-img-top">
+                      </a>
+                        <div class="card-body">
+                            <h6><a href="#">노지 캠핑</a></h6>
+                            <p class="text-muted card-text">군고구마 파는 아가씨? ㅎㅎ 라면 거하게 먹고 기분좋아서 한 컷</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 transform-on-hover">
+                        <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfMjY5/MDAxNzc2MTA0ODMwOTkx.54sigo0yxvtHLfTwVTq_j9rlnz5OiHk0MgU3ilLhsBQg.67nTifYD8nZeGkpmKKzoqi_e02omzfzLZW_R3qvZer0g.JPEG/IMG_4348.jpg?type=w773" alt="Card Image" class="card-img-top">
+                      </a>
+                        <div class="card-body">
+                            <h6><a href="#">Lorem Ipsum</a></h6>
+                            <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 transform-on-hover">
+                        <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfMjQ3/MDAxNzc2MTA0ODMxMDEz.Vcf_DV97BSaMZAArmph8HIF3dYoMf6O4PXEuslGSFYAg.qgkRPQh_44LMnKV1fg_S6NwnPN0vy0bbdSudMj5zaXcg.JPEG/IMG_0197.jpg?type=w773" alt="Card Image" class="card-img-top">
+                      </a>
+                        <div class="card-body">
+                            <h6><a href="#">Lorem Ipsum</a></h6>
+                            <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 transform-on-hover">
+                        <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfNDQg/MDAxNzc2MTA0ODMxMTcy.9ll1TlP2Zzyja569XBsTzB11-I9FBgNlmcUUagHcBy8g.Sd8h-RQ4F_v5YL9ZYTMGuDg65lF02RsGMxc5BBg6a-Qg.JPEG/IMG_4438.jpg?type=w773" alt="Card Image" class="card-img-top">
+                      </a>
+                        <div class="card-body">
+                            <h6><a href="#">Lorem Ipsum</a></h6>
+                            <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 transform-on-hover">
+                        <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfNjQg/MDAxNzc2MTA0ODI4NjQw.l7B1NzrcWwLgQcUlq9yqwIfORUxaeq4juzPxS2pqh1wg.4PvnlVhsOZsSgZ9OUS_aHriV2JczQKhmaxzlFJINVpkg.JPEG/IMG_4434.jpg?type=w773" alt="Card Image" class="card-img-top">
+                      </a>
+                        <div class="card-body">
+                            <h6><a href="#">Lorem Ipsum</a></h6>
+                            <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 transform-on-hover">
+                        <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfNTUg/MDAxNzc2MTA0ODMwNzY1.Yz7JeUvcKmlbdl1XI46yAF9unjk3Xubx-xkN_D9Lna8g.2uWyCCIoaA9RHSZMC7JC71INVfw-qtR0vNYbgX6XGC8g.JPEG/IMG_4507.jpg?type=w773" alt="Card Image" class="card-img-top">
+                      </a>
+                        <div class="card-body">
+                            <h6><a href="#">Lorem Ipsum</a></h6>
+                            <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 transform-on-hover">
+                        <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfMyAg/MDAxNzc2MTA0ODMwODM2.9GmHe2C89WqyZVZFy67dPIuiqQ9tFH5F9gTcBkTmGGAg.3A1jZp3LzY9NhCE-ML1iUsbC5nQEqMDmacNLJDsC83Mg.JPEG/IMG_4495.jpg?type=w773" alt="Card Image" class="card-img-top">
+                      </a>
+                        <div class="card-body">
+                            <h6><a href="#">Lorem Ipsum</a></h6>
+                            <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 transform-on-hover">
+                        <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfMjU3/MDAxNzc2MTA0ODMwODQ4.QKkH2v8wqWWxW6cZ9nb8OOhIZknSb4efmNc6QDxKOCIg.w1hm1LZ0-B1VgGPHbfAFStObNMEuD-0yoH61_003px0g.JPEG/IMG_3985.jpg?type=w773" alt="Card Image" class="card-img-top">
+                      </a>
+                        <div class="card-body">
+                            <h6><a href="#">Lorem Ipsum</a></h6>
+                            <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 transform-on-hover">
+                        <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfMTUx/MDAxNzc2MTA0ODI4MDU5.gsQJ679mbdajDY7hsgPJ7Xw5DkJMgTog9XmUMFk-yJYg.dDNVWI0Oqd02Cp__8R5ZVGrKZ7JHHq4Ri9aivcQRpB4g.JPEG/IMG_4548.jpg?type=w773" alt="Card Image" class="card-img-top">
+                      </a>
+                        <div class="card-body">
+                            <h6><a href="#">Lorem Ipsum</a></h6>
+                            <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 transform-on-hover">
+                        <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfNDcg/MDAxNzc2MTA0ODI4MDQ2.Aw6Jas6PuUlVdTSP1YWNG_nqerpK1v7ClanyhM0utJog.QWPxaY8VZ8_ALOrPTwqTYbegCkeQhnsiY-OrFifnrdQg.JPEG/IMG_3977.jpg?type=w773" alt="Card Image" class="card-img-top">
+                      </a>
+                        <div class="card-body">
+                            <h6><a href="#">Lorem Ipsum</a></h6>
+                            <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 transform-on-hover">
+                        <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfNCAg/MDAxNzc2MTA0ODI5Mjc0.zGp1-ZGl9Zbj4WK7fjPiPvSh6wwJfwpov7TTGpKmqJog.1Rmo6khXIiw7WqZoSap9OhyZ8R4hPoyIT2NiMgPzEdkg.JPEG/IMG_4971.jpg?type=w773" alt="Card Image" class="card-img-top">
+                      </a>
+                        <div class="card-body">
+                            <h6><a href="#">Lorem Ipsum</a></h6>
+                            <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 transform-on-hover">
+                        <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfMjIg/MDAxNzc2MTA0ODI5Mzc3.gw9HUyXMl3NV3qxAQ5ZvcliUfo7k6TYrwomGQoqv6AIg.D2Mh-PFkrJH36oQmJHBqr3EqsD_0Wn-MxaGP7rbj600g.JPEG/IMG_5005.jpg?type=w773" alt="Card Image" class="card-img-top">
+                      </a>
+                        <div class="card-body">
+                            <h6><a href="#">Lorem Ipsum</a></h6>
+                            <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 transform-on-hover">
+                        <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfOTIg/MDAxNzc2MTA0ODMwMDUx.3KncUMbQ6lPoT1noOTExfTESOnGN07jNG8loypA_8BIg.zZ9OXI-5hzhwohrTejaKxaKWgn09pB4mxdHRbkoQdD0g.JPEG/IMG_5063.jpg?type=w773" alt="Card Image" class="card-img-top">
+                      </a>
+                        <div class="card-body">
+                            <h6><a href="#">Lorem Ipsum</a></h6>
+                            <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 transform-on-hover">
+                        <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfMjcw/MDAxNzc2MTA0ODI4MDMx.nfGImSyMEFAlbEiX2D9di2gaq4EwO4mifK4focEFeSAg.mb236Q1ztUbnwRO8RKRHapYAhblfbjXAzvVehd9gutQg.JPEG/IMG_0308.jpg?type=w773" alt="Card Image" class="card-img-top">
+                      </a>
+                        <div class="card-body">
+                            <h6><a href="#">Lorem Ipsum</a></h6>
+                            <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 transform-on-hover">
+                        <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfOTUg/MDAxNzc2MTA0ODI4MDE2.0gTF1J9UZHTbaFlvXTIfPIHxs5R_BTblP_nnROCs-hkg.bPHJ6otB3-SHvBr2_X3yvo_JN6iT66qZKtDd5v7VZOIg.JPEG/IMG_0915.jpg?type=w773" alt="Card Image" class="card-img-top">
+                      </a>
+                        <div class="card-body">
+                            <h6><a href="#">Lorem Ipsum</a></h6>
+                            <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 transform-on-hover">
+                        <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfMTI5/MDAxNzc2MTA0ODI5OTY2.e5qU0mT-wRZK3eUT3-FHQBAPcIjPs2OOWj9hjTtig1og.b2xN_6PKkh5hyZLzmphjDozfb3NMRV9BaAxkmNVoMfAg.JPEG/IMG_0908.jpg?type=w773" alt="Card Image" class="card-img-top">
+                      </a>
+                        <div class="card-body">
+                            <h6><a href="#">Lorem Ipsum</a></h6>
+                            <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 transform-on-hover">
+                        <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfMTY0/MDAxNzc2MTA0ODMwMDI2.2KF6W14QpoOD2SU1VOFJkweP7aWMGlJRO-CReTFNlLwg.huUz6DtkbxGfM-Qx1BcxPSwNezsIQmVoDTE14f7I3ZYg.JPEG/IMG_0936.jpg?type=w773" alt="Card Image" class="card-img-top">
+                      </a>
+                        <div class="card-body">
+                            <h6><a href="#">Lorem Ipsum</a></h6>
+                            <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 transform-on-hover">
+                        <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfMTY5/MDAxNzc2MTA0ODMwMzUw.5zPX6CXIN5BJxySW1B_wf9-_txhwx8YX88WIFsfsa2sg.a0AiJpQxGtIwO_i1ocOVxnD2btS4zClrnFz9uaXv3dIg.JPEG/IMG_5112.jpg?type=w773" alt="Card Image" class="card-img-top">
+                      </a>
+                        <div class="card-body">
+                            <h6><a href="#">Lorem Ipsum</a></h6>
+                            <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 transform-on-hover">
+                        <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfMjQw/MDAxNzc2MTA0ODMwNTUx.qCthwbZVAca37-6Nt-eHa3rA-_KmI3xCh1OHh4uukwcg.D0GoK4mij4V5rP39xU-63tN9mRuPdmhwAhhKxxrya2kg.JPEG/Screenshot_2026-04-14_at_03.20.53.JPG?type=w773" alt="Card Image" class="card-img-top">
+                      </a>
+                        <div class="card-body">
+                            <h6><a href="#">Lorem Ipsum</a></h6>
+                            <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 transform-on-hover">
+                        <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfMzYg/MDAxNzc2MTA0ODMwNjEz.z0FAjt75rRnT2kwNhGHXtZh7QZa7bM8jJaWtvaGwhyMg.NYKe9sU5gX4GsexmecZfO-r3Sj1ZS7_24CsGErEAHEog.JPEG/IMG_5221.jpg?type=w773" alt="Card Image" class="card-img-top">
+                      </a>
+                        <div class="card-body">
+                            <h6><a href="#">Lorem Ipsum</a></h6>
+                            <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 transform-on-hover">
+                        <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfMTE4/MDAxNzc2MTA0ODI4NzA3.OIf1feUMu-unAUw-9PoeT23sWm6XVkD4u3VtJemKKSkg.-5Wu1MihNv0sbUV3ID-EK_0iUafNbu0wqMW7vY2keL0g.JPEG/IMG_5222.jpg?type=w773" alt="Card Image" class="card-img-top">
+                      </a>
+                        <div class="card-body">
+                            <h6><a href="#">Lorem Ipsum</a></h6>
+                            <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 transform-on-hover">
+                        <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfMTYw/MDAxNzc2MTA0ODI4Nzcy.W2KDCvWQmMBlzMHunujAHOn6cYX_jcABuno8aOjtjUEg.4uh35_nD4Av1DZGERthKET0Jx0ziyNa5VbNi3yb4LEwg.JPEG/IMG_5442.jpg?type=w773" alt="Card Image" class="card-img-top">
+                      </a>
+                        <div class="card-body">
+                            <h6><a href="#">Lorem Ipsum</a></h6>
+                            <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 transform-on-hover">
+                        <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfMjE5/MDAxNzc2MTA0ODI5NDEz.dSl2WDn7ZayI1CCqTc2KTqMi2Y0jmFj_jch57TWWsTgg.9YiommoI4147T9L4OHZllDfWxd5bhBxAPzree-VkbJMg.JPEG/IMG_5408.jpg?type=w773" alt="Card Image" class="card-img-top">
+                      </a>
+                        <div class="card-body">
+                            <h6><a href="#">Lorem Ipsum</a></h6>
+                            <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 transform-on-hover">
+                        <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfNzUg/MDAxNzc2MTA0ODI4NzQ2.YnVR3-K0FKx8z10osbNRuQkCPJb3P6GjjIeGi9lbjGAg._0VRf3b9qz6qBDAZmnkEQeu_RNmZTLZt60VpXtcZWFwg.JPEG/IMG_1035.jpg?type=w773" alt="Card Image" class="card-img-top">
+                      </a>
+                        <div class="card-body">
+                            <h6><a href="#">Lorem Ipsum</a></h6>
+                            <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 transform-on-hover">
+                        <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfMTg5/MDAxNzc2MTA0ODI5MjU2.XwjZLnDQdJI_McOG-SnA7crwb1ZU8Vi4RTRg-niFMNog.82i35YGesuk-UYvIP_cWKk5YMZZnk5Jh7yaODl3Tsiog.JPEG/IMG_5803.jpg?type=w773" alt="Card Image" class="card-img-top">
+                      </a>
+                        <div class="card-body">
+                            <h6><a href="#">Lorem Ipsum</a></h6>
+                            <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 transform-on-hover">
+                        <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfMTUz/MDAxNzc2MTA0ODI5Mjcx.BqJkrnzhzqQEsBQMtnHCcfxiQo0EXBVuFhGBc7kMMCAg.hdarI6c4znSyNyQ-VKQNqncZwX1NFkpddu4RnkEWgQQg.JPEG/IMG_5812.jpg?type=w773" alt="Card Image" class="card-img-top">
+                      </a>
+                        <div class="card-body">
+                            <h6><a href="#">Lorem Ipsum</a></h6>
+                            <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 transform-on-hover">
+                        <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfNTMg/MDAxNzc2MTA0ODMxNDI0.Rb4JbqU4FOEEc3V8jB-MAUdgRhkv67Ye6GnrQuEF9skg.oA4oiJzsHxG-tFAO14-2G8QNAVNXpS_AgJilzB2Dexsg.JPEG/IMG_6058.jpg?type=w773" alt="Card Image" class="card-img-top">
+                      </a>
+                        <div class="card-body">
+                            <h6><a href="#">Lorem Ipsum</a></h6>
+                            <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 transform-on-hover">
+                        <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfMzcg/MDAxNzc2MTA0ODMxNDQw.BIXbkipfnUEMduq9UEFIhs4QBVYWjvA_0zsRnbiktbkg.snweLnpzQ0wGfKJn1syjq_9fBs0wk2ZcL6tpg1433a0g.JPEG/IMG_6162.jpg?type=w773" alt="Card Image" class="card-img-top">
+                      </a>
+                        <div class="card-body">
+                            <h6><a href="#">Lorem Ipsum</a></h6>
+                            <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 transform-on-hover">
+                        <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfMjEx/MDAxNzc2MTA0ODMxNDgz.RJv_48bwOssCJRVMfMCYnwFmvu0jL4w_NrtQamWcxpEg.80IuiE2ztX1AG7DL0VxJqlTEEMcQ7E2tTOBRq-mLdHYg.JPEG/IMG_6163.jpg?type=w773" alt="Card Image" class="card-img-top">
+                      </a>
+                        <div class="card-body">
+                            <h6><a href="#">Lorem Ipsum</a></h6>
+                            <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 transform-on-hover">
+                        <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfNDAg/MDAxNzc2MTA0ODMxNjQy.QxkaqpqV8EbITGChR-e7FoMlZXUbHJrUXLblSrk3yrYg.9OKqOrX7U9WHEMwNuyZBiy28sEZNTMiZY36OYxiuIDUg.JPEG/IMG_6430.jpg?type=w773" alt="Card Image" class="card-img-top">
+                      </a>
+                        <div class="card-body">
+                            <h6><a href="#">Lorem Ipsum</a></h6>
+                            <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 transform-on-hover">
+                        <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfMjAw/MDAxNzc2MTA0ODMwMTYx.au1zPEwTJiJV6fs7gVzpDw_vtM3_cSOFGMh1c_gQabog.wcXGX3IE-di36MPktEm9yqc1Db1Pl-1AJ9Lv8_G7iJQg.JPEG/IMG_6175.jpg?type=w773" alt="Card Image" class="card-img-top">
+                      </a>
+                        <div class="card-body">
+                            <h6><a href="#">Lorem Ipsum</a></h6>
+                            <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 transform-on-hover">
+                        <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfMTYx/MDAxNzc2MTA0ODMwMjg3.JyleENknFMTYCEeH59M5Z8zVhwm7PJX9vYSH3RkNE6wg.P3ITFwFhw3SrCLObf51crbCByhePPRW5icfA32jgHEMg.JPEG/IMG_6176.jpg?type=w773" alt="Card Image" class="card-img-top">
+                      </a>
+                        <div class="card-body">
+                            <h6><a href="#">Lorem Ipsum</a></h6>
+                            <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 transform-on-hover">
+                        <img src="https://postfiles.pstatic.net/MjAyNjA0MTRfMjgz/MDAxNzc2MTA0ODMxODY2.4SucoLn4GaUhSyKuBcmHkug2tL25f7dp2s-xdA8ygu8g.odF42hW7HsrpY3pMXu3-oKbTeQljDTFoM3ytmJ6zHasg.JPEG/IMG_6187.JPEG?type=w773" alt="Card Image" class="card-img-top">
+                      </a>
+                        <div class="card-body">
+                            <h6><a href="#">Lorem Ipsum</a></h6>
+                            <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <section class="section" id="contact">
+      <div class="wrap">
+        <div class="cta-banner">
+          <div class="cta-content">
+            <div>
+              <div class="section-label" style="color:#fff; margin-bottom:14px;"><span class="eyebrow-dot" style="background:#fff; box-shadow:0 0 0 6px rgba(255,255,255,.16)"></span> 아쉽지만, 여기까지</div>
+              <h2 class="cta-title">앞으로의 우리 이야기가 더<br>궁금하다면 업데이트를 신청해주세요</h2>
+              <p class="cta-desc">업데이트를 하고싶다면 아래 신청하기 버튼을 클릭해주세요</p>
+              <div class="cta-actions">
+                <a href="#top" class="btn btn-white">서방님께 애교부리기</a>
+                <a href="tel:01012345678" class="btn btn-ghost-white">서방님께 뽀뽀 신청하기</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M12 28C12 20.268 18.268 14 26 14C30.377 14 34.284 16.009 36.855 19.156L39.001 21.783L41.147 19.156C43.718 16.009 47.625 14 52.002 14C59.734 14 66.002 20.268 66.002 28C66.002 31.948 64.354 35.717 61.448 38.385L39 58L16.554 38.385C13.648 35.717 12 31.948 12 28Z" transform="translate(-7 -4)" stroke="#ffffff" stroke-width="5" stroke-linejoin="round"/>
+            <path d="M17 30H25L28.5 23L34 38L38 30H47" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>민희야, 사랑해</span>
+        </div>
+
+        <div class="footer-links">
+          <a href="#service-info">사이트소개</a>
+          <a href="#">서방이용약관</a>
+          <a href="#">미니정보처리방침</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>서방님 전화번호 010-5064-6399</div>
+        <div>© MADE BY RYUSEONHO FOR KIMMINHEE All Rights Reserved.</div>
+      </div>
+    </div>
+  </footer>
+      <script>
+        baguetteBox.run('.cards-gallery', { animation: 'slideIn'});
+    </script>
+</body>
+</html>
